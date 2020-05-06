@@ -1,0 +1,389 @@
+@levelNum: 1; // 级别,修改此处即可 lessc index.less index1.css(打包要npm i less -g,安装less工具),注意0和1是采用的同样的样式
+
+.font11_max13_step1 {
+  .fontfunc(@levelNum, 1px, 13px, 11px);
+}
+
+.font12_max13_step1 {
+  .fontfuncOne(@levelNum, 1px, 13px, 12px);
+}
+
+.font12_max14_step1 {
+  .fontfunc(@levelNum, 1px, 14px, 12px);
+}
+
+.font12_max16_step2 {
+  .fontfunc(@levelNum, 2px, 16px, 12px);
+}
+
+.font13_step1 {
+  font-size: 13px + (@levelNum - 1) !important;
+}
+
+.font13_max15_step1 {
+  .fontfunc(@levelNum, 1px, 15px, 13px);
+}
+
+/*按钮*/
+.font14_max16_step2 {
+  .fontfunc(@levelNum, 2px, 16px, 14px);
+
+  span {
+    .fontfunc(@levelNum, 2px, 16px, 14px);
+  }
+}
+
+.font16_step2 {
+  font-size: 16px + (@levelNum - 1) * 2 !important;
+}
+
+.font16_max18_step1 {
+  .fontfunc(@levelNum, 1px, 18px, 16px);
+}
+
+.font15_max17_step1 {
+  .fontfunc(@levelNum, 1px, 17px, 15px);
+}
+
+.font16_max20_step2 {
+  .fontfunc(@levelNum, 2px, 20px, 16px);
+
+  span {
+    .fontfunc(@levelNum, 2px, 20px, 16px);
+  }
+}
+
+.font17_step1 {
+  font-size: 17px + (@levelNum - 1) !important;
+}
+
+.font17_max21_step1 {
+  .fontfunc(@levelNum, 1px, 21px, 17px);
+}
+
+.font18_step1 {
+  font-size: 18px + (@levelNum - 1) !important;
+}
+
+
+.font18_step2 {
+  font-size: 18px + (@levelNum - 1) * 2 !important;
+}
+
+.font18_max22_step2 {
+  .fontfunc(@levelNum, 2px, 22px, 18px);
+
+  span,
+  div,
+  p {
+    .fontfunc(@levelNum, 2px, 22px, 18px);
+  }
+}
+
+.font22_max26_step2 {
+  .fontfunc(@levelNum, 2px, 26px, 22px);
+}
+
+.lineHeight26_step2 {
+  line-height: 26px + (@levelNum - 1) * 2 !important;
+}
+.lineHeight26_step2_to_height {
+  height: (26px + (@levelNum - 1) * 2) * 2 !important;
+}
+
+.lineHeight24_step2 {
+  line-height: 24px + (@levelNum - 1) * 2 !important;
+}
+.lineHeight24_step2_to_height {
+  height: (24px + (@levelNum - 1) * 2) * 2 !important;
+}
+
+.lineHeight11_max13_step1 {
+  .lineHeightfunc(@levelNum, 1px, 13px, 11px);
+}
+
+.lineHeight27_max35_step4 {
+
+  span,
+  div,
+  p {
+    .lineHeightfunc(@levelNum, 4px, 35px, 27px);
+  }
+
+  .lineHeightfunc(@levelNum, 4px, 35px, 27px);
+}
+
+.lineHeight30_max34_step2 {
+  .lineHeightfunc(@levelNum, 2px, 34px, 30px);
+
+  span,
+  div,
+  p {
+    .lineHeightfunc(@levelNum, 2px, 34px, 30px);
+  }
+}
+
+.avatar30_step0 {
+  width: 30px !important;
+  height: 30px !important;
+
+  img {
+    max-width: 30px !important;
+  }
+}
+
+.avatar48_step0 {
+  width: 48px !important;
+  height: 48px !important;
+
+  img {
+    max-width: 48px !important;
+  }
+}
+
+.avatar70_step0 {
+  width: 70px !important;
+  height: 70px !important;
+
+  img {
+    max-width: 70px !important;
+  }
+}
+
+.avtar34_step1 {
+  width: 34px + (@levelNum - 1) !important;
+  height: 34px + (@levelNum - 1) !important;
+
+  img {
+    max-width: 34px + (@levelNum - 1) !important;
+  }
+}
+
+.avatar36_max38_step1 {
+  .avatarFuc(@levelNum, 1px, 38px, 36px)
+}
+
+.avatar_w60h77_maxW66H85 {
+  .avatarCFuc(@levelNum, 3px, 4px, 66px, 60px, 85px, 77px)
+}
+
+/*Tabs切换，在Tabs外包一个div，参考委员工作室首页*/
+.themeForTabsSize {
+  .am-tabs {
+
+    .am-tabs-tab-bar-wrap {
+
+      .am-tabs-default-bar {
+
+        .am-tabs-default-bar-tab {
+          font-size: 17px + (@levelNum - 1);
+        }
+      }
+
+      .am-tabs-default-bar-tab-active {
+        font-size: 18px + (@levelNum - 1) !important;
+      }
+    }
+  }
+}
+
+.themeForTabsSizeMin15Max17 {
+  .am-tabs {
+
+    .am-tabs-tab-bar-wrap {
+
+      .am-tabs-default-bar {
+
+        .am-tabs-default-bar-tab when(@levelNum<3) {
+          font-size: 15px + (@levelNum - 1);
+        }
+        .am-tabs-default-bar-tab when(@levelNum>=3) {
+          font-size: 17px;
+        }
+      }
+
+      .am-tabs-default-bar-tab-active when(@levelNum<3) {
+        font-size: 16px + (@levelNum - 1) !important;
+      }
+      .am-tabs-default-bar-tab-active when(@levelNum>=3) {
+        font-size: 18px !important;
+      }
+    }
+  }
+}
+
+/*TextareaItem组件样式，在TextareaItem上加上此类名，参考委员工作室我要反映问题界面*/
+.textareaItemTheme {
+  .am-textarea-label {
+    font-size: 20px !important;
+  }
+
+  .am-textarea-control {
+    textarea {
+      font-size: 18px + (@levelNum - 1) * 2 !important;
+      line-height: 26px + (@levelNum - 1) * 2 !important;
+
+      &::-webkit-input-placeholder {
+        font-size: 18px + (@levelNum - 1) * 2 !important;
+        line-height: 26px + (@levelNum - 1) * 2 !important;
+      }
+    }
+  }
+}
+
+.pickerTheme {
+  .am-list-line{
+    .am-list-content{
+      .fontfunc(@levelNum, 2px, 22px, 18px) !important;
+    }
+    .am-list-extra{
+      .fontfunc(@levelNum, 1px, 21px, 17px) !important;
+      line-height: 26px + (@levelNum - 1) * 2 !important;
+    }
+  } 
+}
+
+/*InputItem组件样式，在InputItem上加上此类名，参考委员工作室我要反映问题界面*/
+.inputItemTheme {
+  .am-input-label {
+    font-size: 20px !important;
+  }
+
+  .am-input-control {
+    input {
+      font-size: 18px + (@levelNum - 1) * 2 !important;
+      line-height: 26px + (@levelNum - 1) * 2 !important;
+
+      &::-webkit-input-placeholder {
+        font-size: 18px + (@levelNum - 1) * 2 !important;
+        line-height: 26px + (@levelNum - 1) * 2 !important;
+      }
+    }
+  }
+}
+
+.textareaItemThemeSizeMin17Max21 {
+  .am-textarea-label {
+    .fontfunc(@levelNum, 2px, 22px, 18px) !important;
+  }
+
+  .am-textarea-control {
+    textarea {
+      .fontfunc(@levelNum, 1px, 21px, 17px) !important;
+      line-height: 26px + (@levelNum - 1) * 2 !important;
+
+      &::-webkit-input-placeholder {
+        .fontfunc(@levelNum, 1px, 21px, 17px) !important;
+        line-height: 26px + (@levelNum - 1) * 2 !important;
+      }
+    }
+  }
+}
+.inputItemThemeSizeMin17Max21 {
+  .am-input-label {
+    .fontfunc(@levelNum, 2px, 22px, 18px) !important;
+  }
+
+  .am-input-control {
+    input {
+      .fontfunc(@levelNum, 1px, 21px, 17px) !important;
+
+      &::-webkit-input-placeholder {
+        .fontfunc(@levelNum, 1px, 21px, 17px)!important;
+      }
+    }
+  }
+}
+
+/*List内带Item组件样式，在List组件上加此类名，参考委员工作室审核详情界面*/
+.listTheme {
+  .am-list-line {
+    .am-list-content {
+      .fontfunc(@levelNum, 2px, 22px, 18px);
+    }
+
+    .am-list-extra {
+      .fontfunc(@levelNum, 2px, 21px, 17px);
+      .lineHeightfunc(@levelNum, 2px, 34px, 30px);
+    }
+  }
+}
+
+// 字体大小方法，@level->级别，@step->增长步长，@max->最大值，@min->最小值
+.fontfunc(@level, @step, @max, @min) when(@level<3) {
+  font-size: @min + (@level - 1) * @step  !important;
+}
+
+.fontfunc(@level, @step, @max, @min) when(@level>=3) {
+  font-size: @max  !important;
+}
+
+.fontfuncOne(@level, @step, @max, @min) when(@level<2) {
+  font-size: @min + (@level - 1) * @step  !important;
+}
+
+.fontfuncOne(@level, @step, @max, @min) when(@level>=2) {
+  font-size: @max  !important;
+}
+
+// 字体行高方法，@level->级别，@step->增长步长，@max->最大值，@min->最小值
+.lineHeightfunc(@level, @step, @max, @min) when(@level<3) {
+  line-height: @min + (@level - 1) * @step  !important;
+}
+
+.lineHeightfunc(@level, @step, @max, @min) when(@level>=3) {
+  line-height: @max  !important;
+}
+
+// 正方形头像方法，@level->级别，@step->增长步长，@max->最大值，@min->最小值
+.avatarFuc(@level, @step, @max, @min)when(@level<3) {
+  width: @min + (@level - 1) * @step  !important;
+  height: @min + (@level - 1) * @step  !important;
+
+  img {
+    max-width: @min + (@level - 1) * @step  !important;
+  }
+}
+
+.avatarFuc(@level, @step, @max, @min)when(@level>=3) {
+  width: @max  !important;
+  height: @max  !important;
+
+  img {
+    max-width: @max  !important;
+  }
+}
+
+// 寸照头像方法，@level->级别，@stepW->宽增长步长，@stepH->高增长步长，@maxW->最大宽，@minW->最小宽，@maxH->最大高，@minH->最小高
+.avatarCFuc(@level, @stepW, @stepH, @maxW, @minW, @maxH, @minH)when(@level<3) {
+  width: @minW + (@level - 1) * @stepW  !important;
+  height: @minH + (@level - 1) * @stepH  !important;
+
+  img {
+    max-width: @minW + (@level - 1) * @stepW  !important;
+  }
+}
+
+.avatarCFuc(@level, @stepW, @stepH, @maxW, @minW, @maxH, @minH)when(@level>=3) {
+  width: @maxW  !important;
+  height: @maxH  !important;
+
+  img {
+    height: @maxH  !important;
+  }
+}
+
+
+.avatar45_step2 {
+  width: 45px + (@levelNum - 1)*2 !important;
+  height: 45px + (@levelNum - 1)*2 !important;
+}
+
+.lineHeight45_step2 {
+  line-height: 45px + (@levelNum - 1)*2 !important;;
+}
+
+.font14_step2 {
+  font-size: 14px + (@levelNum - 1) * 2 !important;
+}
+

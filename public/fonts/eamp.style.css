@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'base_font';
+  src:  url('cn.ttf?dajq3p') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'base_font_w';
+  src:  url('cn_w.ttf?dajq3p') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+body,td,th,div {font-family: 'base_font'}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?r9pczo');
+  src:  url('icomoon.eot?r9pczo#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?r9pczo') format('truetype'),
+    url('icomoon.woff?r9pczo') format('woff'),
+    url('icomoon.svg?r9pczo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\e900";
+}
+.icon-app-advice:before {
+  content: "\e901";
+}
+.icon-app-proposal:before {
+  content: "\e902";
+}
+.icon-app-social:before {
+  content: "\e903";
+}
+.icon-arrow-down:before {
+  content: "\e904";
+}
+.icon-arrow-left:before {
+  content: "\e905";
+}
+.icon-arrow-right:before {
+  content: "\e906";
+}
+.icon-arrow-up:before {
+  content: "\e907";
+}
+.icon-attach:before {
+  content: "\e908";
+}
+.icon-calendar:before {
+  content: "\e909";
+}
+.icon-check:before {
+  content: "\e90a";
+}
+.icon-close:before {
+  content: "\e90b";
+}
+.icon-close-circle-fill:before {
+  content: "\e90c";
+}
+.icon-close-circle-line:before {
+  content: "\e90d";
+}
+.icon-collecting:before {
+  content: "\e90e";
+}
+.icon-collect-selected:before {
+  content: "\e90f";
+}
+.icon-comment:before {
+  content: "\e910";
+}
+.icon-data-report:before {
+  content: "\e911";
+}
+.icon-default-avatar:before {
+  content: "\e912";
+}
+.icon-delete:before {
+  content: "\e913";
+}
+.icon-document:before {
+  content: "\e914";
+}
+.icon-double-avatar:before {
+  content: "\e915";
+}
+.icon-drop-down:before {
+  content: "\e916";
+}
+.icon-drop-up:before {
+  content: "\e917";
+}
+.icon-error:before {
+  content: "\e918";
+}
+.icon-excel:before {
+  content: "\e919";
+}
+.icon-exit:before {
+  content: "\e91a";
+}
+.icon-explain:before {
+  content: "\e91b";
+}
+.icon-filter:before {
+  content: "\e91c";
+}
+.icon-government-doc:before {
+  content: "\e91d";
+}
+.icon-government-info:before {
+  content: "\e91e";
+}
+.icon-info-reading:before {
+  content: "\e91f";
+}
+.icon-information:before {
+  content: "\e920";
+}
+.icon-letter:before {
+  content: "\e921";
+}
+.icon-levitate-add:before {
+  content: "\e922";
+}
+.icon-levitate-advice:before {
+  content: "\e923";
+}
+.icon-levitate-archives:before {
+  content: "\e924";
+}
+.icon-levitate-delete:before {
+  content: "\e925";
+}
+.icon-levitate-examine:before {
+  content: "\e926";
+}
+.icon-levitate-function:before {
+  content: "\e927";
+}
+.icon-levitate-good:before {
+  content: "\e928";
+}
+.icon-levitate-handle:before {
+  content: "\e929";
+}
+.icon-levitate-hottest:before {
+  content: "\e92a";
+}
+.icon-levitate-latest:before {
+  content: "\e92b";
+}
+.icon-levitate-leaving:before {
+  content: "\e92c";
+}
+.icon-levitate-log:before {
+  content: "\e92d";
+}
+.icon-levitate-map:before {
+  content: "\e92e";
+}
+.icon-levitate-poverty:before {
+  content: "\e92f";
+}
+.icon-levitate-proposal:before {
+  content: "\e930";
+}
+.icon-levitate-report:before {
+  content: "\e931";
+}
+.icon-levitate-social:before {
+  content: "\e932";
+}
+.icon-levitate-studio:before {
+  content: "\e933";
+}
+.icon-likes:before {
+  content: "\e934";
+}
+.icon-likes-selected:before {
+  content: "\e935";
+}
+.icon-listen-audio:before {
+  content: "\e936";
+}
+.icon-menu:before {
+  content: "\e937";
+}
+.icon-minus-circle:before {
+  content: "\e938";
+}
+.icon-minus-square:before {
+  content: "\e939";
+}
+.icon-minus-square-disabled:before {
+  content: "\e93a";
+}
+.icon-more:before {
+  content: "\e93b";
+}
+.icon-my-proposal:before {
+  content: "\e93c";
+}
+.icon-notice:before {
+  content: "\e93d";
+}
+.icon-pdf:before {
+  content: "\e93e";
+}
+.icon-picture:before {
+  content: "\e93f";
+}
+.icon-plus-circle:before {
+  content: "\e940";
+}
+.icon-plus-square:before {
+  content: "\e941";
+}
+.icon-proposal-confirmed:before {
+  content: "\e942";
+}
+.icon-reading:before {
+  content: "\e943";
+}
+.icon-references-document:before {
+  content: "\e944";
+}
+.icon-references-historical:before {
+  content: "\e945";
+}
+.icon-references-history:before {
+  content: "\e946";
+}
+.icon-references-leader:before {
+  content: "\e947";
+}
+.icon-references-library:before {
+  content: "\e948";
+}
+.icon-references-library-search:before {
+  content: "\e949";
+}
+.icon-references-map:before {
+  content: "\e94a";
+}
+.icon-references-notification:before {
+  content: "\e94b";
+}
+.icon-references-political:before {
+  content: "\e94c";
+}
+.icon-references-proposal:before {
+  content: "\e94d";
+}
+.icon-references-regulations:before {
+  content: "\e94e";
+}
+.icon-references-report:before {
+  content: "\e94f";
+}
+.icon-references-research:before {
+  content: "\e950";
+}
+.icon-references-social:before {
+  content: "\e951";
+}
+.icon-references-speaker:before {
+  content: "\e952";
+}
+.icon-references-study:before {
+  content: "\e953";
+}
+.icon-references-system:before {
+  content: "\e954";
+}
+.icon-references-topics:before {
+  content: "\e955";
+}
+.icon-set-font-size:before {
+  content: "\e956";
+}
+.icon-share:before {
+  content: "\e957";
+}
+.icon-simplified-chinese:before {
+  content: "\e958";
+}
+.icon-sort-falling:before {
+  content: "\e959";
+}
+.icon-sort-rising:before {
+  content: "\e95a";
+}
+.icon-statistics:before {
+  content: "\e95b";
+}
+.icon-traditional-chinese:before {
+  content: "\e95c";
+}
+.icon-user:before {
+  content: "\e95d";
+}
+.icon-word:before {
+  content: "\e95e";
+}
+

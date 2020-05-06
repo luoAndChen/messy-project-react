@@ -1,0 +1,186 @@
+@levelNum: 5; // 级别
+
+// 字体大小
+@usernameFontSize: 16px + (@levelNum - 1); // 用户名字体大小 标准->16; 18 20 22 24
+@titleFontSize: 18px + (@levelNum - 1) * 2; // 主标题 18 20 22 24 26
+@tabsActiveFontSize: 18px + (@levelNum - 1); // Tabs选中状态
+@tabsDefaultFontSize: 17px + (@levelNum - 1); // Tabs选中状态
+@bangfuDx: 34px + (@levelNum - 1); // 帮扶大小
+@bangfuFont: 13px + (@levelNum - 1); // 帮扶字体大小
+
+/* 在你的相应标签上加上此类名，并将你自己原有的字体大小样式注释调*/
+/* 用户名*/
+.usernameFontSize {
+  font-size: @usernameFontSize  !important;
+}
+
+/*主标题*/
+.titleFontSize {
+  font-size: @titleFontSize  !important;
+  line-height: 26px + (@levelNum - 1) * 2 !important;
+}
+
+/*标签*/
+.tagFontSize {
+  .tagFontFunc(@levelNum)
+}
+
+/*时间点赞评论*/
+.timeBarFontSize {
+  .timeBarFontFunc(@levelNum)
+}
+
+/*正方形头像*/
+.avsterSize {
+  .avsterFunc(@levelNum)
+}
+
+/*存照头像*/
+.avsterCZSize {
+  .avsterCZFunc(@levelNum)
+}
+
+/*省市区切换相关设置*/
+.themeForTabsSize {
+  :global(.am-tabs) {
+
+    :global(.am-tabs-tab-bar-wrap) {
+
+      :global(.am-tabs-default-bar) {
+
+        :global(.am-tabs-default-bar-tab) {
+          font-size: @tabsDefaultFontSize;
+        }
+      }
+
+      :global(.am-tabs-default-bar-tab-active) {
+        font-size: @tabsActiveFontSize  !important;
+      }
+    }
+  }
+}
+
+/*二级Tabs切换*/
+.subThemeForTabsSize {
+  .subThemeForTabsFuc(@levelNum)
+}
+
+/*二级按钮切换*/
+.subThemeForBtnsSize {
+  .subThemeForBtnsFuc(@levelNum)
+}
+
+/* 帮扶圆纽大小*/
+.bangfuBtnSize {
+  width: @bangfuDx  !important;
+  height: @bangfuDx  !important;
+  font-size: @bangfuFont  !important;
+}
+
+
+
+// 此处为相应设置方法
+// 标签字体大小方法   标签字体大小 11 12 13
+.tagFontFunc(@level) when (@level<3) {
+  font-size: 11px + (@level - 1) !important;
+}
+
+.tagFontFunc(@level) when (@level>=3) {
+  font-size: 13px !important;
+}
+
+// 时间点赞评论量 12 13 14
+.timeBarFontFunc(@level) when (@level<3) {
+  font-size: 12px + (@level - 1) !important;
+}
+
+.timeBarFontFunc(@level) when (@level>=3) {
+  font-size: 14px !important;
+}
+
+// 正方形头像大小
+// 标准->36; +1->37; +2,+3,+4....->38; 
+.avsterFunc(@level) when (@level<3) {
+  width: 36px + (@level - 1) !important;
+  height: 36px + (@level - 1) !important;
+
+  img {
+    max-width: 36px + (@level - 1) !important;
+  }
+}
+
+.avsterFunc(@level) when (@level>=3) {
+  width: 38px !important;
+  height: 38px !important;
+
+  img {
+    max-width: 38px !important;
+  }
+}
+
+
+// 寸照头像大小 (委员工作室)
+// 标准->60,77; +1->63,81; +2,+3,+4....->66,85; 
+.avsterCZFunc(@level) when (@level<3) {
+  width: 60px + (@level - 1) * 3 !important;
+  height: 77px + (@level - 1) * 3 !important;
+
+  img {
+    max-width: 60px + (@level - 1) * 3 !important;
+  }
+}
+
+.avsterCZFunc(@level) when (@level>=3) {
+  width: 66px !important;
+  height: 85px !important;
+
+  img {
+    max-width: 85px !important;
+  }
+}
+
+.subThemeForTabsFuc(@level) when (@level<3) {
+  :global(.am-tabs) {
+
+    :global(.am-tabs-tab-bar-wrap) {
+
+      :global(.am-tabs-default-bar) {
+
+        :global(.am-tabs-default-bar-tab) {
+          font-size: 16px + (@level - 1) * 2 !important;
+        }
+      }
+
+      :global(.am-tabs-default-bar-tab-active) {
+        font-size: 16px + (@level - 1) * 2 !important;
+      }
+    }
+  }
+}
+
+.subThemeForTabsFuc(@level) when (@level>=3) {
+  :global(.am-tabs) {
+
+    :global(.am-tabs-tab-bar-wrap) {
+
+      :global(.am-tabs-default-bar) {
+
+        :global(.am-tabs-default-bar-tab) {
+          font-size: 18px !important;
+        }
+      }
+
+      :global(.am-tabs-default-bar-tab-active) {
+        font-size: 18px !important;
+      }
+    }
+  }
+}
+
+.subThemeForBtnsFuc(@level) when (@level<3) {
+  font-size: 16px + (@level - 1) * 2 !important;
+}
+
+.subThemeForBtnsFuc(@level) when (@level>=3) {
+  font-size: 18px !important;
+}

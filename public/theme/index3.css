@@ -1,0 +1,218 @@
+.font11_max13_step1 {
+  font-size: 13px !important;
+}
+.font12_max13_step1 {
+  font-size: 13px !important;
+}
+.font12_max14_step1 {
+  font-size: 14px !important;
+}
+.font12_max16_step2 {
+  font-size: 16px !important;
+}
+.font13_step1 {
+  font-size: 15px !important;
+}
+.font13_max15_step1 {
+  font-size: 15px !important;
+}
+/*按钮*/
+.font14_max16_step2 {
+  font-size: 16px !important;
+}
+.font14_max16_step2 span {
+  font-size: 16px !important;
+}
+.font16_step2 {
+  font-size: 20px !important;
+}
+.font16_max18_step1 {
+  font-size: 18px !important;
+}
+.font15_max17_step1 {
+  font-size: 17px !important;
+}
+.font16_max20_step2 {
+  font-size: 20px !important;
+}
+.font16_max20_step2 span {
+  font-size: 20px !important;
+}
+.font17_step1 {
+  font-size: 19px !important;
+}
+.font17_max21_step1 {
+  font-size: 21px !important;
+}
+.font18_step1 {
+  font-size: 20px !important;
+}
+.font18_step2 {
+  font-size: 22px !important;
+}
+.font18_max22_step2 {
+  font-size: 22px !important;
+}
+.font18_max22_step2 span,
+.font18_max22_step2 div,
+.font18_max22_step2 p {
+  font-size: 22px !important;
+}
+.font22_max26_step2 {
+  font-size: 26px !important;
+}
+.lineHeight26_step2 {
+  line-height: 30px !important;
+}
+.lineHeight26_step2_to_height {
+  height: 60px !important;
+}
+.lineHeight24_step2 {
+  line-height: 28px !important;
+}
+.lineHeight24_step2_to_height {
+  height: 56px !important;
+}
+.lineHeight11_max13_step1 {
+  line-height: 13px !important;
+}
+.lineHeight27_max35_step4 {
+  line-height: 35px !important;
+}
+.lineHeight27_max35_step4 span,
+.lineHeight27_max35_step4 div,
+.lineHeight27_max35_step4 p {
+  line-height: 35px !important;
+}
+.lineHeight30_max34_step2 {
+  line-height: 34px !important;
+}
+.lineHeight30_max34_step2 span,
+.lineHeight30_max34_step2 div,
+.lineHeight30_max34_step2 p {
+  line-height: 34px !important;
+}
+.avatar30_step0 {
+  width: 30px !important;
+  height: 30px !important;
+}
+.avatar30_step0 img {
+  max-width: 30px !important;
+}
+.avatar48_step0 {
+  width: 48px !important;
+  height: 48px !important;
+}
+.avatar48_step0 img {
+  max-width: 48px !important;
+}
+.avatar70_step0 {
+  width: 70px !important;
+  height: 70px !important;
+}
+.avatar70_step0 img {
+  max-width: 70px !important;
+}
+.avtar34_step1 {
+  width: 36px !important;
+  height: 36px !important;
+}
+.avtar34_step1 img {
+  max-width: 36px !important;
+}
+.avatar36_max38_step1 {
+  width: 38px !important;
+  height: 38px !important;
+}
+.avatar36_max38_step1 img {
+  max-width: 38px !important;
+}
+.avatar_w60h77_maxW66H85 {
+  width: 66px !important;
+  height: 85px !important;
+}
+.avatar_w60h77_maxW66H85 img {
+  height: 85px !important;
+}
+/*Tabs切换，在Tabs外包一个div，参考委员工作室首页*/
+.themeForTabsSize .am-tabs .am-tabs-tab-bar-wrap .am-tabs-default-bar .am-tabs-default-bar-tab {
+  font-size: 19px;
+}
+.themeForTabsSize .am-tabs .am-tabs-tab-bar-wrap .am-tabs-default-bar-tab-active {
+  font-size: 20px !important;
+}
+.themeForTabsSizeMin15Max17 .am-tabs .am-tabs-tab-bar-wrap .am-tabs-default-bar .am-tabs-default-bar-tab {
+  font-size: 17px;
+}
+.themeForTabsSizeMin15Max17 .am-tabs .am-tabs-tab-bar-wrap .am-tabs-default-bar-tab-active {
+  font-size: 18px !important;
+}
+/*TextareaItem组件样式，在TextareaItem上加上此类名，参考委员工作室我要反映问题界面*/
+.textareaItemTheme .am-textarea-label {
+  font-size: 20px !important;
+}
+.textareaItemTheme .am-textarea-control textarea {
+  font-size: 22px !important;
+  line-height: 30px !important;
+}
+.textareaItemTheme .am-textarea-control textarea::-webkit-input-placeholder {
+  font-size: 22px !important;
+  line-height: 30px !important;
+}
+.pickerTheme .am-list-line .am-list-content {
+  font-size: 22px !important;
+}
+.pickerTheme .am-list-line .am-list-extra {
+  font-size: 21px !important;
+  line-height: 30px !important;
+}
+/*InputItem组件样式，在InputItem上加上此类名，参考委员工作室我要反映问题界面*/
+.inputItemTheme .am-input-label {
+  font-size: 20px !important;
+}
+.inputItemTheme .am-input-control input {
+  font-size: 22px !important;
+  line-height: 30px !important;
+}
+.inputItemTheme .am-input-control input::-webkit-input-placeholder {
+  font-size: 22px !important;
+  line-height: 30px !important;
+}
+.textareaItemThemeSizeMin17Max21 .am-textarea-label {
+  font-size: 22px !important;
+}
+.textareaItemThemeSizeMin17Max21 .am-textarea-control textarea {
+  font-size: 21px !important;
+  line-height: 30px !important;
+}
+.textareaItemThemeSizeMin17Max21 .am-textarea-control textarea::-webkit-input-placeholder {
+  font-size: 21px !important;
+  line-height: 30px !important;
+}
+.inputItemThemeSizeMin17Max21 .am-input-label {
+  font-size: 22px !important;
+}
+.inputItemThemeSizeMin17Max21 .am-input-control input {
+  font-size: 21px !important;
+}
+.inputItemThemeSizeMin17Max21 .am-input-control input::-webkit-input-placeholder {
+  font-size: 21px !important;
+}
+/*List内带Item组件样式，在List组件上加此类名，参考委员工作室审核详情界面*/
+.listTheme .am-list-line .am-list-content {
+  font-size: 22px !important;
+}
+.listTheme .am-list-line .am-list-extra {
+  font-size: 21px !important;
+  line-height: 34px !important;
+}
+.avatar45_step2 {
+  width: 49px !important;
+  height: 49px !important;
+}
+.lineHeight45_step2 {
+  line-height: 49px !important;
+}
+.font14_step2 {
+  font-size: 18px !important;
+}
