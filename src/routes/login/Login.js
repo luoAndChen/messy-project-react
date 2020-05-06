@@ -24,7 +24,7 @@ export default function Login(props) {
         <InputItem className={SelfCss.inputItemCss} type="text" >账号</InputItem>
         <InputItem className={SelfCss.inputItemCss_possword} type="password" placeholder="****" >密码</InputItem>
         <div style={{ display: 'flex' }}>
-          <Link to='/wjy/home' style={{ flex: '1', margin: '20px 20px' }}>
+          <Link to='/index' style={{ flex: '1', margin: '20px 20px' }}>
             <Button >登录</Button>
           </Link>
           <Link to='/wjy/home' style={{ flex: '1', margin: '20px 20px' }}>

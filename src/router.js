@@ -2,6 +2,7 @@ import React from 'react';
 import { Router, Route, Switch } from 'dva/router';
 
 import Login from './routes/login/Login';
+import Index from './routes/index/Index';
 
 function RouterConfig({ history, app }) {
 
@@ -9,6 +10,7 @@ function RouterConfig({ history, app }) {
     <Router history={history}>
       <Switch>
         <Route path="/" exact component={Login} />
+        <Route path="/index" exact component={Index} />
       </Switch>
     </Router>
   );
