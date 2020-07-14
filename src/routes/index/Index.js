@@ -1,6 +1,7 @@
 import React from "react";
 import SelfCss from "./Index.less";
-import { Tabs, Button } from 'antd';
+import { Tabs, Input } from 'antd';
+const { Search } = Input;
 
 const { TabPane } = Tabs;
 
@@ -11,6 +12,17 @@ export default function Index(props) {
 
   return (
     <div className={SelfCss.cardContainer}>
+      <div className={SelfCss.topLeftStyle} style={{ width: '20%' }}>我们的音乐</div>
+      <div className={SelfCss.topRightStyle} style={{ width: '35%' }}>
+        <Search
+          placeholder="音乐/电台/视频"
+          onSearch={value => console.log(value)}
+          style={{ width: 200 }}
+        />
+        <span style={{ marginLeft: '10px' }}>
+          登录
+        </span>
+      </div>
       <Tabs type="card">
         <TabPane tab="发现音乐" key="1">
           <div className={SelfCss.TabsOneStyle}>

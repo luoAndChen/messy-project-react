@@ -15,13 +15,14 @@
           display: flex;
           justify-content: center;
           flex: 1;
+          margin: 1px 40% 0px 20%;
 
           :global(.ant-tabs-ink-bar) {
             visibility: inherit;
             border-style: solid;
             border-width: 0px 10px 10px 10px;
             border-color: #000 #000 @colorR #000;
-            width: 10px !important; 
+            width: 10px !important;
             display: flex;
             flex: 1;
             justify-content: center;
@@ -85,5 +86,31 @@
         }
       }
     }
+  }
+}
+
+.topStyle() {
+  height: 70px;
+  line-height: 70px;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+  color: #fff;
+}
+
+.topLeftStyle {
+  .topStyle();
+  left: 0px;
+  text-align: right;
+  font-size: 25px;
+}
+
+.topRightStyle {
+  .topStyle();
+  right: 0px;
+  text-align: left;
+
+  :global(.ant-input-affix-wrapper) {
+    border-radius: 30px;
   }
 }
